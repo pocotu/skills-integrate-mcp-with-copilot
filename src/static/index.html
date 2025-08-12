@@ -14,25 +14,42 @@
 
     <main>
       <section id="activities-container">
-          <h3>Available Activities</h3>
-          <div id="activities-toolbar">
-            <input type="text" id="search-activity" placeholder="Search activities..." />
-            <select id="filter-category">
+        <h3>Available Activities</h3>
+        
+        <!-- Filter and Search Toolbar -->
+        <div id="toolbar">
+          <div class="filter-group">
+            <label for="search-input">Search:</label>
+            <input type="text" id="search-input" placeholder="Search activities..." />
+          </div>
+          
+          <div class="filter-group">
+            <label for="category-filter">Category:</label>
+            <select id="category-filter">
               <option value="">All Categories</option>
-              <option value="Club">Club</option>
-              <option value="Team">Team</option>
-              <option value="Class">Class</option>
-              <option value="Other">Other</option>
-            </select>
-            <select id="sort-activity">
-              <option value="name">Sort by Name</option>
-              <option value="spots">Sort by Availability</option>
+              <option value="Academic">Academic</option>
+              <option value="Sports">Sports</option>
+              <option value="Creative">Creative</option>
             </select>
           </div>
-          <div id="activities-list">
-            <!-- Activities will be loaded here -->
-            <p>Loading activities...</p>
+          
+          <div class="filter-group">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select">
+              <option value="name">Name (A-Z)</option>
+              <option value="name-desc">Name (Z-A)</option>
+              <option value="time">Schedule</option>
+              <option value="spots">Available Spots</option>
+            </select>
           </div>
+          
+          <button id="clear-filters">Clear Filters</button>
+        </div>
+        
+        <div id="activities-list">
+          <!-- Activities will be loaded here -->
+          <p>Loading activities...</p>
+        </div>
       </section>
 
       <section id="signup-container">
