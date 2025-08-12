@@ -14,11 +14,25 @@
 
     <main>
       <section id="activities-container">
-        <h3>Available Activities</h3>
-        <div id="activities-list">
-          <!-- Activities will be loaded here -->
-          <p>Loading activities...</p>
-        </div>
+          <h3>Available Activities</h3>
+          <div id="activities-toolbar">
+            <input type="text" id="search-activity" placeholder="Search activities..." />
+            <select id="filter-category">
+              <option value="">All Categories</option>
+              <option value="Club">Club</option>
+              <option value="Team">Team</option>
+              <option value="Class">Class</option>
+              <option value="Other">Other</option>
+            </select>
+            <select id="sort-activity">
+              <option value="name">Sort by Name</option>
+              <option value="spots">Sort by Availability</option>
+            </select>
+          </div>
+          <div id="activities-list">
+            <!-- Activities will be loaded here -->
+            <p>Loading activities...</p>
+          </div>
       </section>
 
       <section id="signup-container">

@@ -50,6 +50,32 @@ section {
   max-width: 500px;
 }
 
+#activities-toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#activities-toolbar input[type="text"],
+#activities-toolbar select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+#activities-toolbar input[type="text"] {
+  flex: 2;
+  min-width: 120px;
+}
+
+#activities-toolbar select {
+  flex: 1;
+  min-width: 100px;
+}
+}
+
 section h3 {
   margin-bottom: 20px;
   padding-bottom: 10px;
